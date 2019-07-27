@@ -10,3 +10,5 @@ npm init -y
 npm install webpack --save-dev
 npm install webpack-cli --save-dev
 ```
+
+通过 ``` npx webpack ``` 命令， 执行对应的打包工具。 src 编译生成文件到dist

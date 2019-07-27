@@ -1,7 +1,9 @@
 function component() {
     const element = document.createElement('div');
 
-    element.innerHTML = _.join(['Hello', 'World'], '');
+    element.innerHTML = 'hello world yaoqijun';
+
+    console.log('test all content');
 
     return element;
 }
