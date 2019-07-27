@@ -1,9 +1,21 @@
 const path = require('path');
 
+// 定义不同的路劲基础变量
+const ROOT_PATH = path.resolve(__dirname);
+const SRC_PATH = path.resolve(ROOT_PATH, 'src');
+const DIST_PATH = path.resolve(ROOT_PATH, 'dist');
+
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+        main: '@/index.js'
+    },
     output:{
-        filename: 'main.js',
-        path: path.resolve(__dirname, 'dist')
+        path: DIST_PATH,
+        filename: '[name].js',
+    },
+    resolve:{
+        alias:{
+            '@': SRC_PATH
+        }
     }
 }
