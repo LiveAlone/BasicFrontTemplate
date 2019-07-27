@@ -11,7 +11,7 @@ module.exports = {
     },
     output:{
         path: DIST_PATH,
-        filename: '[name].js',
+        filename: 'main.js',
     },
     resolve:{
         alias:{
