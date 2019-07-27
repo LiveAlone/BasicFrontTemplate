@@ -1,0 +1,24 @@
+{
+  "name": "BasicFrontTemplate",
+  "version": "1.0.0",
+  "description": "简易自动配置管理前端",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiveAlone/BasicFrontTemplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiveAlone/BasicFrontTemplate/issues"
+  },
+  "homepage": "https://github.com/LiveAlone/BasicFrontTemplate#readme",
+  "devDependencies": {
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6"
+  }
+}
