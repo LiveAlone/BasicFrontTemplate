@@ -34,3 +34,7 @@ generate manifest 配置文件 ``` npm install --save-dev webpack-manifest-plugi
 webpack.config 配置 ``` mode: 'development', ``` 生成的dist 可读文件方式。
 
 ``` devtool: 'inline-source-map', ``` 多个配置 打包成一个 bundle.js 打印对应 哪个文件错误信息。
+
+dev 开发环境支持， 不同模式
+1. Wathc Mode ``` "watch": "webpack --watch", ``` 监控修改模式, 自动编译方式
+2. ``` npm install --save-dev webpack-dev-server ``` dev webpack 开发环境服务模式, 自动展示方式

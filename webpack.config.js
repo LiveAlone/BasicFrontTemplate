@@ -11,6 +11,7 @@ const TEM_PATH = path.resolve(ROOT_PATH, 'template');
 
 module.exports = {
     mode: "development",
+    devtool: 'inline-source-map',
     entry: {
         app: '@/index.js',
     },

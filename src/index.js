@@ -24,6 +24,8 @@ function component() {
     btn.onclick = printMe;
     element.appendChild(btn);
 
+    console.log('123213');
+
     return element;
 }
 
