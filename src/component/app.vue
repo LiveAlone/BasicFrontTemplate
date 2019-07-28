@@ -1,19 +1,19 @@
 <template>
-    <div class="msg">
-        {{msg}}
-    </div>
+  <div class="msg">
+    {{msg}}
+  </div>
 </template>
 
 <script>
 export default {
-    data(){
-        return {
-            message: 'Hello Vue',
-            msg: 'template again'
-        }
+  data(){
+    return{
+      msg: 'hello wrold vue content yaoqijun 123'
     }
+  }
 }
 </script>
+
 
 <style>
   .msg{

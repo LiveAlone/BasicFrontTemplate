@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
-const { VueLoaderPlugin } = require('vue-loader');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 // 定义不同的路劲基础变量
 const ROOT_PATH = path.resolve(__dirname);
@@ -11,7 +11,7 @@ const DIST_PATH = path.resolve(ROOT_PATH, 'dist');
 const TEM_PATH = path.resolve(ROOT_PATH, 'template');
 
 module.exports = {
-    // mode: "development",
+    mode: "development",
     devtool: 'inline-source-map',
     devServer:{
         contentBase: DIST_PATH
@@ -24,7 +24,7 @@ module.exports = {
         }
     },
     entry: {
-        app: '@/app.js'
+        index: '@/index.js'
     },
     output:{
         path: DIST_PATH,
