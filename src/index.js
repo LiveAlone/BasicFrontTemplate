@@ -1,4 +1,6 @@
 import './style.css'
+import Icon from './single.png'
+import Data from './data.xml'
 
 function component() {
     const element = document.createElement('div');
@@ -7,7 +9,11 @@ function component() {
 
     element.classList.add('hello');
 
-    console.log('test all content');
+    const myIcon = new Image();
+    myIcon.src = Icon
+    element.appendChild(myIcon);
+
+    console.log(Data);
 
     return element;
 }

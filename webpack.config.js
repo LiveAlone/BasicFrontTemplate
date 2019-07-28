@@ -16,9 +16,25 @@ module.exports = {
     module:{
         rules: [
             {
+                test: /\.(csv|tsv)$/,
+                use: ['csv-loader']
+            },
+            {
+                test: /\.xml$/,
+                use: ['xml-loader']
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                use: ['file-loader']
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: ['file-loader']
+            },
+            {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
-            },
+            }
         ]
     },
     resolve:{
