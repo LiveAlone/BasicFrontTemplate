@@ -10,6 +10,7 @@ const DIST_PATH = path.resolve(ROOT_PATH, 'dist');
 const TEM_PATH = path.resolve(ROOT_PATH, 'template');
 
 module.exports = {
+    mode: "development",
     entry: {
         app: '@/index.js',
     },

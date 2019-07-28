@@ -28,3 +28,9 @@ html webpack 插件工具 ``` npm install --save-dev html-webpack-plugin ```, �
 clean package plugin, ``` npm install --save-dev clean-webpack-plugin ``` 插件方式， 清除 dist 目录配置
 
 generate manifest 配置文件 ``` npm install --save-dev webpack-manifest-plugin ``` 生成对应的 信息文件
+
+## development 配置管理
+
+webpack.config 配置 ``` mode: 'development', ``` 生成的dist 可读文件方式。
+
+``` devtool: 'inline-source-map', ``` 多个配置 打包成一个 bundle.js 打印对应 哪个文件错误信息。
