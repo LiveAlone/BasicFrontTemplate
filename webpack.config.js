@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 
 // 定义不同的路劲基础变量
 const ROOT_PATH = path.resolve(__dirname);
@@ -51,6 +52,7 @@ module.exports = {
           title:'FrontDemoExample',
           filename: 'index.html',
           template: path.resolve(TEM_PATH, 'index.html')
-        })
+        }),
+        new ManifestPlugin()
       ]
 }

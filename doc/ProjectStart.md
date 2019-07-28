@@ -27,5 +27,4 @@ html webpack 插件工具 ``` npm install --save-dev html-webpack-plugin ```, �
 
 clean package plugin, ``` npm install --save-dev clean-webpack-plugin ``` 插件方式， 清除 dist 目录配置
 
-
-
+generate manifest 配置文件 ``` npm install --save-dev webpack-manifest-plugin ``` 生成对应的 信息文件
