@@ -21,5 +21,9 @@ npm install webpack-cli --save-dev
 
 通过 xml-loader, cvs-load 加载不同数据文件 ``` npm install --save-dev csv-loader xml-loader ```
 
+通过 webpack.config.js ouput 方式 ， entry 指定name, output '[name]' 指定生成文件 
+
+html webpack 插件工具 ``` npm install --save-dev html-webpack-plugin ```
+
 
 

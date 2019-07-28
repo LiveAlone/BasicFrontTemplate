@@ -7,11 +7,12 @@ const DIST_PATH = path.resolve(ROOT_PATH, 'dist');
 
 module.exports = {
     entry: {
-        main: '@/index.js'
+        app: '@/index.js',
+        print: '@/print.js'
     },
     output:{
         path: DIST_PATH,
-        filename: 'bundle.js',
+        filename: '[name].bundle.js',
     },
     module:{
         rules: [
