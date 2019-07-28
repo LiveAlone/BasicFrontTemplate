@@ -23,7 +23,9 @@ npm install webpack-cli --save-dev
 
 通过 webpack.config.js ouput 方式 ， entry 指定name, output '[name]' 指定生成文件 
 
-html webpack 插件工具 ``` npm install --save-dev html-webpack-plugin ```
+html webpack 插件工具 ``` npm install --save-dev html-webpack-plugin ```, 指定html 文件配置路径，title 标题路径。 自动 import js 文件方式。
+
+clean package plugin, ``` npm install --save-dev clean-webpack-plugin ``` 插件方式， 清除 dist 目录配置
 
 
 
