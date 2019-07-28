@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
+const { VueLoaderPlugin } = require('vue-loader');
 
 // 定义不同的路劲基础变量
 const ROOT_PATH = path.resolve(__dirname);
@@ -23,8 +24,7 @@ module.exports = {
         }
     },
     entry: {
-        app: '@/index.js',
-        printMs: '@/print.js'
+        app: '@/app.js'
     },
     output:{
         path: DIST_PATH,
@@ -51,12 +51,17 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
+            },
+            {   
+                test: /\.vue$/, 
+                use: ['vue-loader'] 
             }
         ]
     },
     resolve:{
         alias:{
-            '@': SRC_PATH
+            '@': SRC_PATH,
+            'vue$': 'vue/dist/vue.esm.js'
         }
     },
     plugins: [
@@ -66,6 +71,7 @@ module.exports = {
           filename: 'index.html',
           template: path.resolve(TEM_PATH, 'index.html')
         }),
-        new ManifestPlugin()
+        new ManifestPlugin(),
+        new VueLoaderPlugin()
     ]
 }

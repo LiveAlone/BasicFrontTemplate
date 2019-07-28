@@ -75,3 +75,11 @@ webpack.common.js
 webpack.dev.js
 webpack.prod.js
 ```
+
+## Vue 模块功能化前端配置
+vue 配置方式
+```
+npm install webpack webpack-dev-server vue-loader vue-html-loader css-loader vue-style-loader vue-hot-reload-api --save-dev
+npm install html-webpack-plugin --save-dev
+npm install vue --save
+```
