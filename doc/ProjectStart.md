@@ -44,3 +44,7 @@ dev 开发环境支持， 不同模式
   },
 ```
 3. ``` npm install --save-dev express webpack-dev-middleware ``` 通过使用中间件 express ， 支持服务端启动方式。 配置 ``` publicPath: '/' ```, 配置 server.js, 配置启动端口，node 方式 运行端口 3000
+
+## code split, js script 业务代码拆分
+防止一次load一个过大的文件, code split 方式
+1. 

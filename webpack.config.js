@@ -17,6 +17,7 @@ module.exports = {
     },
     entry: {
         app: '@/index.js',
+        printMs: '@/print.js'
     },
     output:{
         path: DIST_PATH,

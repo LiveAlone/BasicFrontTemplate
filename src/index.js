@@ -1,3 +1,4 @@
+import _ from 'lodash'
 import './style.css'
 import Icon from './single.png'
 import Data from './data.xml'
@@ -7,7 +8,7 @@ function component() {
     const element = document.createElement('div');
 
     // 添加string 字符对象
-    element.innerHTML = 'hello world yaoqijun hahahah';
+    element.innerHTML = _.join(['hello', 'world', 'yaoqijun'], '-');
     element.classList.add('hello');
 
     // 添加图片对象

@@ -1,3 +1,5 @@
+import _ from 'lodash'
+
 export default function printMe(){
-    console.log('I get called from print.js! hahah');
+    console.log(_.join(['this', 'is', 'printMe', 'message'], '~'));
 }
