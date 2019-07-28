@@ -10,10 +10,17 @@ const DIST_PATH = path.resolve(ROOT_PATH, 'dist');
 const TEM_PATH = path.resolve(ROOT_PATH, 'template');
 
 module.exports = {
-    mode: "development",
+    // mode: "development",
     devtool: 'inline-source-map',
     devServer:{
         contentBase: DIST_PATH
+    },
+    optimization: {
+        moduleIds: 'hashed',
+        runtimeChunk: 'single',
+        splitChunks: {
+          chunks: 'all'
+        }
     },
     entry: {
         app: '@/index.js',
@@ -60,5 +67,5 @@ module.exports = {
           template: path.resolve(TEM_PATH, 'index.html')
         }),
         new ManifestPlugin()
-      ]
+    ]
 }

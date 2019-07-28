@@ -47,4 +47,31 @@ dev 开发环境支持， 不同模式
 
 ## code split, js script 业务代码拆分
 防止一次load一个过大的文件, code split 方式
-1. 
+1. entry 不同文件, 编译生成不同文件。（！ 但是对于 相同的引用文件, 重复引入, 不够灵活）
+2. split code chunk 方式, plugin 插件方式, 支持js 文件拆分
+```
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
+  },
+```
+不同的三方插件支持
+```
+mini-css-extract-plugin: Useful for splitting CSS out from the main application.
+bundle-loader: Used to split code and lazy load the resulting bundles.
+promise-loader: Similar to the bundle-loader but uses promises.
+```
+
+## Cache 缓存文件
+客户端通常缓存对应客户端文件， 通过 hash 方式， 重新部署时候
+1. output file 生成对应的 [contenthash] hash 文件方式
+
+## production 生产环境， 不同的搭配文件
+1. config common dev 不同环境配置
+```
+webpack.config.js
+webpack.common.js
+webpack.dev.js
+webpack.prod.js
+```
