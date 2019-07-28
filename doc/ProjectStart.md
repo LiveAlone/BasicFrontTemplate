@@ -37,4 +37,10 @@ webpack.config 配置 ``` mode: 'development', ``` 生成的dist 可读文件方
 
 dev 开发环境支持， 不同模式
 1. Wathc Mode ``` "watch": "webpack --watch", ``` 监控修改模式, 自动编译方式
-2. ``` npm install --save-dev webpack-dev-server ``` dev webpack 开发环境服务模式, 自动展示方式
+2. ``` npm install --save-dev webpack-dev-server ``` dev webpack 开发环境服务模式, 自动展示方式.  start 配置启动命令 ```  ```
+```
+  devServer: {
+    contentBase: DIST_PATH
+  },
+```
+3. ``` npm install --save-dev express webpack-dev-middleware ``` 通过使用中间件 express ， 支持服务端启动方式。 配置 ``` publicPath: '/' ```, 配置 server.js, 配置启动端口，node 方式 运行端口 3000
