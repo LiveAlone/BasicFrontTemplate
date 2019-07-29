@@ -86,3 +86,4 @@ npm install html-webpack-plugin --save-dev
 ```
 
 ## Axios 组件进行 http 请求
+``` npm install axios --save ```
