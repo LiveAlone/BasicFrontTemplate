@@ -84,3 +84,5 @@ npm install html-webpack-plugin --save-dev
 npm install vue --save
 npm install html-webpack-plugin --save-dev
 ```
+
+## Axios 组件进行 http 请求

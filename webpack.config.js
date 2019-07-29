@@ -24,7 +24,7 @@ module.exports = {
         }
     },
     entry: {
-        index: '@/index.js'
+        app: '@/app.js'
     },
     output:{
         path: DIST_PATH,
