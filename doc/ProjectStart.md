@@ -86,4 +86,7 @@ npm install html-webpack-plugin --save-dev
 ```
 
 ## Axios 组件进行 http 请求
-``` npm install axios --save ```
+``` npm install axios --save ``` 支持http host 的方式，进行域名拦截
+
+## element-ui 通过 UI 组件方式, 数据展示
+``` npm install element-ui --save ```
