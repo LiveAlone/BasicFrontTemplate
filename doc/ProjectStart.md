@@ -89,4 +89,6 @@ npm install html-webpack-plugin --save-dev
 ``` npm install axios --save ``` 支持http host 的方式，进行域名拦截
 
 ## element-ui 通过 UI 组件方式, 数据展示
-``` npm install element-ui --save ```
+``` npm install element-ui --save ``` use ElementUi 方式, 对 Component 组件进行数据解析
+
+## vue-router 路由方式, 控制页面的跳转, router 控件方式
