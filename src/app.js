@@ -1,35 +1,25 @@
 import Vue from  'vue';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-import App from '@/component/ui_element.vue'
 import VueRouter from 'vue-router'
+import Main from '@/component/router/main.vue'
+import Home from '@/component/router/home.vue'
+import PageA from '@/component/router/config_page_a.vue'
+import PageB from '@/component/router/config_page_b.vue'
 
 Vue.use(ElementUI);
 Vue.use(VueRouter);
 
-const User = {
-    template: '<div class="user"><h2>User {{ $route.params.id }}</h2><router-view></router-view></div>'
-};
-
-const UserHome = { template: '<div>Home</div>' };
-const UserProfile = { template: '<div>Profile</div>' };
-const UserPosts = { template: '<div>Posts</div>' };
-
 const router = new VueRouter({
     routes:[
-        {
-            path: '/user/:id',
-            component: User,
-            children: [
-                {path: '', component: UserHome},
-                {path: 'profile', component: UserProfile},
-                {path: 'Posts', component: UserPosts}
-            ]
-        }
+        {path: '/', name: '首页', component: Home},
+        {path: '/a_page', name: 'a 页面', component: PageA},
+        {path: '/b_page', name: 'b 页面', component: PageB},
     ]
 });
 
 new Vue({
     el:'#app',
-    render: h => h(App)
+    router,
+    render: h => h(Main)
 });
