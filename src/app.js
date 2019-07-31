@@ -6,6 +6,7 @@ import Main from '@/component/router/main.vue'
 import Home from '@/component/router/home.vue'
 import PageA from '@/component/router/config_page_a.vue'
 import PageB from '@/component/router/config_page_b.vue'
+import Vuex from 'vuex'
 
 Vue.use(ElementUI);
 Vue.use(VueRouter);
