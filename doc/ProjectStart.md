@@ -98,3 +98,7 @@ npm install html-webpack-plugin --save-dev
 ``` npm install vuex --save ```
 vue 对于Component 树结构比较深入, 数据之间的交互笔记复杂， vuex 统一维护 state 运行状态.
 Vuex 类似全局变量， 但是 只能通过 mutations 方式 修改属性配置。
+Vuex store 是一个全局变量, 透传给 继承的所有组件。
+
+1. state 缓存全局使用变量
+2. Getter 提供 storeMap 参数, 关系映射方式
