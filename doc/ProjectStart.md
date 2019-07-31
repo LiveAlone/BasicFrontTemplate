@@ -95,3 +95,5 @@ npm install html-webpack-plugin --save-dev
 导航栏方式， 动态路由导航方式
 
 ## vuex 状态数据管理仓库， 不同状态修改， 驱动 View 展示内容
+vue 对于Component 树结构比较深入, 数据之间的交互笔记复杂， vuex 统一维护 state 运行状态.
+Vuex 类似全局变量， 但是 只能通过 mutations 方式 修改属性配置。
