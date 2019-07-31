@@ -92,3 +92,6 @@ npm install html-webpack-plugin --save-dev
 ``` npm install element-ui --save ``` use ElementUi 方式, 对 Component 组件进行数据解析
 
 ## vue-router 路由方式, 控制页面的跳转, router 控件方式
+导航栏方式， 动态路由导航方式
+
+## vuex 状态数据管理仓库， 不同状态修改， 驱动 View 展示内容
