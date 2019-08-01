@@ -9,7 +9,8 @@
     "start": "webpack-dev-server --mode=development --open --inline --hot --port 8080",
     "server": "node server.js",
     "build": "webpack",
-    "lint": "eslint --ext .js,.vue src"
+    "lint": "eslint --ext .js,.vue src",
+    "uuid": "uuid"
   },
   "repository": {
     "type": "git",

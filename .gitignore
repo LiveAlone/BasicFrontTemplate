@@ -4,6 +4,7 @@ dist/*.js
 dist/*.css
 dist/*.map
 dist/*.html
+dist
 npm-debug.log
 yarn-error.log
 

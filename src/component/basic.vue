@@ -2,7 +2,8 @@
     div
         h5 basic page 页面配置方式
         input(type='checkbox' checked=true)
-        div test
+        - for (var x = 0; x < 3; x++)
+            li item
 </template>
 
 <script>

@@ -111,3 +111,5 @@ Vuex store 是一个全局变量, 透传给 继承的所有组件。
 
 ## pug html 模板操作方式
 ``` npm install pug pug-plain-loader --save-dev ``` pug html 格式化转换, loader vue template 转换支持
+
+## babel 支持， ES6 兼容旧版的浏览器, 支持不同语言编译方式
