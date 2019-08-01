@@ -108,3 +108,6 @@ Vuex store 是一个全局变量, 透传给 继承的所有组件。
 ## eslint 代码格式化组件
 通过 ``` npm install eslint eslint-config-standard eslint-friendly-formatter eslint-loader eslint-plugin-html eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard eslint-plugin-vue --save-dev  ``` 导入插件方式
 ``` npm install babel-eslint --savedev```
+
+## pug html 模板操作方式
+``` npm install pug pug-plain-loader --save-dev ``` pug html 格式化转换, loader vue template 转换支持
